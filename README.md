@@ -1,73 +1,112 @@
-# Welcome to your Lovable project
+# 🍕 Pisgoba - Food Delivery Website
 
-## Project info
+Website pemesanan makanan modern dengan pengiriman cepat dalam 30 menit.
 
-**URL**: https://lovable.dev/projects/d3c3630a-86ee-4e27-93c4-8399234b1277
+## 🌐 Live Demo
 
-## How can I edit this code?
+**Website**: https://aldi1-hub.github.io/
 
-There are several ways of editing your application.
+## ✨ Fitur
 
-**Use Lovable**
+- 🏠 **Home** - Landing page menarik dengan hero section
+- 🍔 **Menu** - Katalog makanan dari berbagai kategori
+- 🛒 **Cart** - Keranjang belanja interaktif
+- 💳 **Checkout** - Proses checkout yang mudah
+- 📦 **Orders** - Tracking pesanan
+- 👤 **Profile** - Profil pengguna
+- ℹ️ **About** - Tentang layanan
+- 📞 **Contact** - Hubungi kami
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/d3c3630a-86ee-4e27-93c4-8399234b1277) and start prompting.
+## 🛠️ Tech Stack
 
-Changes made via Lovable will be committed automatically to this repo.
+- **Frontend**: React 18 + TypeScript
+- **Build Tool**: Vite 5
+- **UI Components**: Shadcn/ui + Radix UI
+- **Styling**: Tailwind CSS
+- **Routing**: React Router DOM v6
+- **State Management**: TanStack Query v5
+- **Icons**: Lucide React
+- **Deployment**: GitHub Pages (GitHub Actions)
 
-**Use your preferred IDE**
+## 📦 Instalasi
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+```bash
+# Clone repository
+git clone https://github.com/aldi1-hub/aldi1-hub.github.io.git
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+# Masuk ke folder project
+cd aldi1-hub.github.io
 
-Follow these steps:
+# Install dependencies
+npm install
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# Jalankan development server
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+Server akan berjalan di: http://localhost:5000
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## 🚀 Development Commands
 
-**Use GitHub Codespaces**
+```bash
+# Development server
+npm run dev
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+# Build untuk production
+npm run build
 
-## What technologies are used for this project?
+# Preview build
+npm run preview
 
-This project is built with:
+# Lint code
+npm run lint
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## 📤 Deployment
 
-## How can I deploy this project?
+Website otomatis di-deploy ke GitHub Pages setiap push ke branch `main`.
 
-Simply open [Lovable](https://lovable.dev/projects/d3c3630a-86ee-4e27-93c4-8399234b1277) and click on Share -> Publish.
+**Setup:**
+1. Push ke repository `aldi1-hub.github.io`
+2. Buka **Settings** → **Pages** di GitHub
+3. Pilih source: **GitHub Actions**
+4. Workflow otomatis berjalan saat push
 
-## Can I connect a custom domain to my Lovable project?
+📖 **Panduan lengkap**: Lihat [DEPLOY.md](./DEPLOY.md)
 
-Yes, you can!
+## 📁 Struktur Project
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+```
+.
+├── .github/workflows/     # GitHub Actions
+├── public/               # Static files
+├── src/
+│   ├── assets/          # Images
+│   ├── components/      # React components
+│   │   └── ui/         # Shadcn components
+│   ├── pages/          # Page components
+│   ├── hooks/          # Custom hooks
+│   └── lib/            # Utilities
+├── index.html          # HTML template
+├── vite.config.ts      # Vite config
+└── package.json        # Dependencies
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+## 🎨 Customization
+
+Edit warna di `src/index.css`:
+
+```css
+:root {
+  --primary: your-color;
+  --secondary: your-color;
+}
+```
+
+## 📝 License
+
+MIT License
+
+---
+
+⭐ Jika bermanfaat, berikan star!
