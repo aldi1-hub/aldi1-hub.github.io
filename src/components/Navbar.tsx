@@ -3,9 +3,12 @@ import { ShoppingCart, User, Menu, Search } from "lucide-react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Sheet, SheetContent, SheetTrigger } from "@/components/ui/sheet";
+import { useCart } from "@/contexts/CartContext";
 
 const Navbar = () => {
   const location = useLocation();
+  const { getCartCount } = useCart();
+  const cartCount = getCartCount();
 
   const navLinks = [
     { name: "Home", path: "/" },
@@ -49,11 +52,13 @@ const Navbar = () => {
             <Search className="h-5 w-5" />
           </Button>
           <Link to="/cart">
-            <Button variant="ghost" size="icon" className="relative">
+            <Button variant="ghost" size="icon" className="relative" data-testid="button-cart">
               <ShoppingCart className="h-5 w-5" />
-              <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-xs text-primary-foreground">
-                3
-              </span>
+              {cartCount > 0 && (
+                <span className="absolute -right-1 -top-1 flex h-5 w-5 items-center justify-center rounded-full bg-primary text-xs text-primary-foreground" data-testid="text-cart-count">
+                  {cartCount}
+                </span>
+              )}
             </Button>
           </Link>
           <Link to="/profile">
