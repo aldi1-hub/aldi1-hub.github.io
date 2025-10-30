@@ -8,6 +8,18 @@ import burgerImg from "@/assets/category-burger.jpg";
 import pizzaImg from "@/assets/category-pizza.jpg";
 import saladImg from "@/assets/category-salad.jpg";
 import sushiImg from "@/assets/category-sushi.jpg";
+import gourmetBurgerImg from "@/assets/stock_images/gourmet_cheeseburger_f548de58.jpg";
+import baconBurgerImg from "@/assets/stock_images/bacon_burger_with_cr_052b32a9.jpg";
+import veggieBurgerImg from "@/assets/stock_images/veggie_burger_health_457ed7db.jpg";
+import hawaiianPizzaImg from "@/assets/stock_images/hawaiian_pizza_with__4e9cff14.jpg";
+import cheesePizzaImg from "@/assets/stock_images/quattro_formaggi_fou_2f7db3c8.jpg";
+import veggiePizzaImg from "@/assets/stock_images/vegetarian_pizza_fre_c832c03a.jpg";
+import gardenSaladImg from "@/assets/stock_images/fresh_green_salad_mi_3e96c446.jpg";
+import capreseSaladImg from "@/assets/stock_images/caprese_salad_tomato_c1dcc48a.jpg";
+import quinoaSaladImg from "@/assets/stock_images/quinoa_salad_healthy_6e381e9a.jpg";
+import californiaRollImg from "@/assets/stock_images/california_sushi_rol_68193d4f.jpg";
+import tunaNigiriImg from "@/assets/stock_images/tuna_sushi_nigiri_fr_87945d63.jpg";
+import dragonRollImg from "@/assets/stock_images/dragon_roll_sushi_te_02c27de7.jpg";
 
 const Menu = () => {
   const [selectedCategory, setSelectedCategory] = useState("all");
@@ -15,12 +27,27 @@ const Menu = () => {
   const menuItems = [
     { id: 1, name: "Classic Burger", category: "burgers", price: 12.99, rating: 4.8, image: burgerImg, desc: "Juicy beef patty with fresh vegetables" },
     { id: 2, name: "Cheese Burger", category: "burgers", price: 14.99, rating: 4.7, image: burgerImg, desc: "Double cheese with premium beef" },
-    { id: 3, name: "Pepperoni Pizza", category: "pizza", price: 16.99, rating: 4.9, image: pizzaImg, desc: "Classic pepperoni with mozzarella" },
-    { id: 4, name: "Margherita Pizza", category: "pizza", price: 14.99, rating: 4.8, image: pizzaImg, desc: "Fresh tomato and basil" },
-    { id: 5, name: "Caesar Salad", category: "salads", price: 9.99, rating: 4.7, image: saladImg, desc: "Romaine lettuce with Caesar dressing" },
-    { id: 6, name: "Greek Salad", category: "salads", price: 10.99, rating: 4.6, image: saladImg, desc: "Fresh vegetables with feta cheese" },
-    { id: 7, name: "Sushi Platter", category: "sushi", price: 24.99, rating: 4.9, image: sushiImg, desc: "Assorted fresh sushi rolls" },
-    { id: 8, name: "Salmon Sashimi", category: "sushi", price: 18.99, rating: 4.8, image: sushiImg, desc: "Premium fresh salmon" },
+    { id: 3, name: "Gourmet Cheeseburger", category: "burgers", price: 15.99, rating: 4.9, image: gourmetBurgerImg, desc: "Premium beef with gourmet cheese blend" },
+    { id: 4, name: "Bacon Burger", category: "burgers", price: 16.49, rating: 4.8, image: baconBurgerImg, desc: "Crispy bacon with melted cheese" },
+    { id: 5, name: "Veggie Burger", category: "burgers", price: 13.99, rating: 4.6, image: veggieBurgerImg, desc: "Plant-based patty with fresh veggies" },
+    
+    { id: 6, name: "Pepperoni Pizza", category: "pizza", price: 16.99, rating: 4.9, image: pizzaImg, desc: "Classic pepperoni with mozzarella" },
+    { id: 7, name: "Margherita Pizza", category: "pizza", price: 14.99, rating: 4.8, image: pizzaImg, desc: "Fresh tomato and basil" },
+    { id: 8, name: "Hawaiian Pizza", category: "pizza", price: 17.99, rating: 4.7, image: hawaiianPizzaImg, desc: "Ham and pineapple delight" },
+    { id: 9, name: "Quattro Formaggi", category: "pizza", price: 18.99, rating: 4.9, image: cheesePizzaImg, desc: "Four cheese blend perfection" },
+    { id: 10, name: "Vegetarian Pizza", category: "pizza", price: 15.99, rating: 4.8, image: veggiePizzaImg, desc: "Fresh vegetables and herbs" },
+    
+    { id: 11, name: "Caesar Salad", category: "salads", price: 9.99, rating: 4.7, image: saladImg, desc: "Romaine lettuce with Caesar dressing" },
+    { id: 12, name: "Greek Salad", category: "salads", price: 10.99, rating: 4.6, image: saladImg, desc: "Fresh vegetables with feta cheese" },
+    { id: 13, name: "Fresh Garden Salad", category: "salads", price: 8.99, rating: 4.5, image: gardenSaladImg, desc: "Mixed greens and seasonal vegetables" },
+    { id: 14, name: "Caprese Salad", category: "salads", price: 11.99, rating: 4.8, image: capreseSaladImg, desc: "Tomato, mozzarella, and basil" },
+    { id: 15, name: "Quinoa Power Bowl", category: "salads", price: 12.99, rating: 4.9, image: quinoaSaladImg, desc: "Protein-packed quinoa with fresh veggies" },
+    
+    { id: 16, name: "Sushi Platter", category: "sushi", price: 24.99, rating: 4.9, image: sushiImg, desc: "Assorted fresh sushi rolls" },
+    { id: 17, name: "Salmon Sashimi", category: "sushi", price: 18.99, rating: 4.8, image: sushiImg, desc: "Premium fresh salmon" },
+    { id: 18, name: "California Roll", category: "sushi", price: 14.99, rating: 4.7, image: californiaRollImg, desc: "Crab, avocado, and cucumber roll" },
+    { id: 19, name: "Tuna Nigiri", category: "sushi", price: 16.99, rating: 4.8, image: tunaNigiriImg, desc: "Fresh tuna on seasoned rice" },
+    { id: 20, name: "Dragon Roll", category: "sushi", price: 22.99, rating: 4.9, image: dragonRollImg, desc: "Eel and avocado with special sauce" },
   ];
 
   const categories = [
