@@ -1,0 +1,77 @@
+========================================
+🚀 CARA DEPLOY KE GITHUB PAGES
+========================================
+
+✅ Website SUDAH BERFUNGSI di Replit!
+❌ Belum tampil di https://aldi1-hub.github.io/ karena belum di-deploy
+
+========================================
+LANGKAH 1: PUSH KE GITHUB
+========================================
+
+Jalankan perintah ini satu per satu di terminal:
+
+git add .
+git commit -m "Deploy to GitHub Pages"
+git push origin main
+
+(Jika diminta username/password GitHub, masukkan credentials Anda)
+
+========================================
+LANGKAH 2: SETUP GITHUB PAGES
+========================================
+
+1. Buka browser, pergi ke:
+   https://github.com/aldi1-hub/aldi1-hub.github.io
+
+2. Klik tab "Settings" (di menu atas)
+
+3. Di sidebar kiri, klik "Pages"
+
+4. Di bagian "Source":
+   - Pilih: "GitHub Actions"
+   - (JANGAN pilih "Deploy from a branch")
+
+5. Klik "Save" jika ada tombolnya
+
+========================================
+LANGKAH 3: CEK DEPLOYMENT
+========================================
+
+1. Klik tab "Actions" (di menu atas GitHub)
+
+2. Anda akan melihat workflow "Deploy to GitHub Pages" sedang berjalan
+   - Tunggu sampai ada tanda centang hijau ✓
+
+3. Proses ini memakan waktu 1-3 menit
+
+========================================
+LANGKAH 4: BUKA WEBSITE
+========================================
+
+Setelah deployment selesai (centang hijau di Actions):
+
+Buka: https://aldi1-hub.github.io/
+
+Website akan tampil sempurna seperti di Replit!
+
+========================================
+TROUBLESHOOTING
+========================================
+
+Jika masih blank:
+1. Tunggu 2-3 menit lagi (GitHub Pages butuh waktu)
+2. Hard refresh browser: Ctrl + Shift + R (Windows) atau Cmd + Shift + R (Mac)
+3. Coba browser lain (Chrome, Firefox, dll)
+4. Cek tab Actions di GitHub - pastikan ada centang hijau
+
+========================================
+PENTING
+========================================
+
+- Repository: aldi1-hub.github.io
+- Branch: main
+- Source: GitHub Actions (BUKAN Deploy from branch)
+- URL: https://aldi1-hub.github.io/
+
+========================================
